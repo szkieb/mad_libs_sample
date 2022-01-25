@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Lips</title>
+</head>
+<body>
+ <div class="container">
+    <h1>The Story Maker</h1> 
+</body>
+<script>
+  let questions = 3;
+  let questionsLeft = ' [' + questions + ' questions left]';
+  const adjective = prompt('Please type an adjective' + questionsLeft);
+  questions -= 1;
+  questionsLeft = ' [' + questions + ' questions left]';
+  const verb = prompt('Please type a verb that does not end in -ing ' + questionsLeft);
+  questions -= 1;
+  questionsLeft = ' [' + questions + ' questions left]';
+  const noun = prompt('Please type a noun' + questionsLeft);
+  alert('All done. Ready for the message?');
+  let sentence = "<h2>There once was a " + adjective;
+  sentence += ' programmer who wanted to use JavaScript to ' + verb;
+  sentence += ' the ' + noun + '.</h2>';
+  document.write(sentence);
+</script>
+</html>
+
+
