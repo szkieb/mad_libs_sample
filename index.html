@@ -11,20 +11,20 @@
     <h1>DevHaus Story</h1> 
 </body>
 <script>
-  let questions = 3;
-  let questionsLeft = ' [' + questions + ' questions left]';
-  const adjective = prompt('Please type an adjective' + questionsLeft);
-  questions -= 1;
-  questionsLeft = ' [' + questions + ' questions left]';
-  const verb = prompt('Please type a verb that does not end in -ing ' + questionsLeft);
-  questions -= 1;
-  questionsLeft = ' [' + questions + ' questions left]';
-  const noun = prompt('Please type a noun' + questionsLeft);
-  alert('All done. Ready for the message?');
-  let sentence = "<h2>There once was a " + adjective;
-  sentence += ' programmer who wanted to use JavaScript to ' + verb;
-  sentence += ' the ' + noun + '.</h2>';
-  document.write(sentence);
+  // We wanna ask 3 questions
+  // 1st: privide an adjective
+  // 2nd: provide a verb that doesnt end in -ing
+  // 3rd: provide a noun
+  // Alert the user that we put in all the information and gonna construct the sentence
+  // print the sentence to the screen
+
+
+  // Tasks:
+  // kepp track of how many questions are remaining
+  // ask the appropritate question at the right time
+  // when all questions are entered construct the sentence
+  // alert the user that the senctence gets constructed
+  // write the sentence to the screen
 </script>
 </html>
 
