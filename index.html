@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mad Libs</title>
-</head>
-<body>
- <div class="container">
-    <h1>DevHaus Story</h1> 
-</body>
-<script>
-  // We wanna ask 3 questions
-  // 1st: privide an adjective
-  // 2nd: provide a verb that doesnt end in -ing
-  // 3rd: provide a noun
-  // Alert the user that we put in all the information and gonna construct the sentence
-  // print the sentence to the screen
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mad Libs</title>
+	</head>
+	<body>
+		<h1>DevHaus Story</h1>
+	</body>
+	<script>
+		// We wanna ask 3 questions
+		window.alert("Welcome, user. Follow the instructions carefully.");
+		let questions = 3;
 
+		// 1st: provide an adjective
+		const adjective = prompt(
+			`Give me an adjective (${questions} questions remaining).`
+		);
 
-  // Tasks:
-  // kepp track of how many questions are remaining
-  // ask the appropritate question at the right time
-  // when all questions are entered construct the sentence
-  // alert the user that the senctence gets constructed
-  // write the sentence to the screen
-</script>
+		questions = questions - 1;
+
+		// 2nd: provide a verb that doesnt end in -ing
+		const verb = window.prompt(
+			`Give me a verb (${questions} questions remaining).`
+		);
+		questions -= 1;
+
+		// 3rd: provide a noun
+		const noun = window.prompt(
+			`Finally, give me a noun (${questions} question remaining).`
+		);
+		questions -= 1;
+
+		// Alert the user that we put in all the information and gonna construct the sentence
+		alert("Thank you, kind human. Your task is being computed.");
+		// print the sentence to the screen
+		document.write(
+			`Dear ${adjective} human, please kindly take the ${noun} for a ${verb}.`
+		);
+
+		// Tasks:
+		// kepp track of how many questions are remaining
+		// ask the appropriate question at the right time
+		// when all questions are entered construct the sentence
+		// alert the user that the senctence gets constructed
+		// write the sentence to the screen
+	</script>
 </html>
-
-
